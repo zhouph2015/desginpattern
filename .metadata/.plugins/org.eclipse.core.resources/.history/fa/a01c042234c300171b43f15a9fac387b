@@ -1,0 +1,29 @@
+package com.bjsxt.singleton1;
+
+/*
+ * singleton design pattern
+ * 
+ * */
+
+public class SingletonDemo1 {
+	
+	private static SingletonDemo1  instance;
+	
+	private SingletonDemo1(){
+		
+	}
+	
+	/*
+	 * lazy mode singleton mode
+	 * 
+	 * */
+
+	public static synchronized SingletonDemo1 getInstance(){
+		
+		if(null == instance){
+			instance = new SingletonDemo1();
+		}
+		return instance;
+	}
+
+}

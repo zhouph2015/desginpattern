@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.bjsxt.singleton&apos; to &apos;designpattern/src/com.bjsxt.singleton&apos;&#x0A;- Original project: &apos;designpattern&apos;&#x0A;- Destination element: &apos;designpattern/src/com.bjsxt.singleton&apos;&#x0A;- Original element: &apos;designpattern/src/com.bjsxt.singleton&apos;" description="Copy package" destination="/src&lt;com.bjsxt.singleton" element1="/src&lt;com.bjsxt.singleton" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1510001280285" version="1.0"/>
+</session>
