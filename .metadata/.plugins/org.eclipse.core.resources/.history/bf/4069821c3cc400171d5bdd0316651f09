@@ -1,0 +1,14 @@
+package com.bjsxt.singleton4;
+
+public class SingletonTest {
+	
+	public static void main(String [] args){
+		SingletonDemo1 s1 = new SingletonDemo1();
+		SingletonDemo1 s2 = new SingletonDemo1();
+		System.out.println(s1);
+		System.out.println(s2);
+		
+		
+	}
+
+}

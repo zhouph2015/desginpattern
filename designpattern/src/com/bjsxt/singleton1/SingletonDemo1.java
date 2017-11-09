@@ -28,5 +28,7 @@ public class SingletonDemo1 {
 		}
 		return instance;
 	}
+	
+	
 
 }

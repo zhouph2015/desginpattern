@@ -1,0 +1,40 @@
+package com.bjsxt.singleton2;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.util.concurrent.CountDownLatch;
+
+
+public class SingletonDemo1Test {
+
+	public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, InterruptedException {
+		
+		long start = System.currentTimeMillis();
+		int threadNum = 20;
+		
+		final CountDownLatch  countDownLatch = new CountDownLatch(threadNum);
+
+		for (int i = 0; i < threadNum; i++) {
+			new Thread(new Runnable() {
+
+				@Override
+				public void run() {
+					for (int i = 0; i < 1000000; i++) {
+						SingletonDemo1.getInstance();
+					}
+					countDownLatch.countDown();
+
+				}
+				
+			}
+
+			).start();
+		}
+		
+		countDownLatch.wait();
+		long end = System.currentTimeMillis();
+		System.out.println(end-start);
+		
+	}
+
+}

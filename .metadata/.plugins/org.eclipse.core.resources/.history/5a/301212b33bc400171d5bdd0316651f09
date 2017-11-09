@@ -1,0 +1,5 @@
+package com.bjsxt.singleton4;
+
+public class SingletonTest {
+
+}

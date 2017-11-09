@@ -1,0 +1,10 @@
+package com.bjsxt.singleton2;
+
+public class SingletonDemo1Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
